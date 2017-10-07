@@ -12,6 +12,9 @@
 		405A3FE61F8185E000F6D2B1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 405A3FE41F8185E000F6D2B1 /* Main.storyboard */; };
 		405A3FE81F8185E000F6D2B1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 405A3FE71F8185E000F6D2B1 /* Assets.xcassets */; };
 		405A3FEB1F8185E000F6D2B1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 405A3FE91F8185E000F6D2B1 /* LaunchScreen.storyboard */; };
+		405A3FF31F819C5600F6D2B1 /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = 405A3FF21F819C5600F6D2B1 /* Session.swift */; };
+		405A3FF51F8969B000F6D2B1 /* MashapeApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 405A3FF41F8969B000F6D2B1 /* MashapeApi.swift */; };
+		405A3FF71F8969C700F6D2B1 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 405A3FF61F8969C700F6D2B1 /* Result.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +25,9 @@
 		405A3FE71F8185E000F6D2B1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		405A3FEA1F8185E000F6D2B1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		405A3FEC1F8185E000F6D2B1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		405A3FF21F819C5600F6D2B1 /* Session.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Session.swift; sourceTree = "<group>"; };
+		405A3FF41F8969B000F6D2B1 /* MashapeApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MashapeApi.swift; sourceTree = "<group>"; };
+		405A3FF61F8969C700F6D2B1 /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +60,8 @@
 		405A3FDF1F8185E000F6D2B1 /* mashape-heartstone */ = {
 			isa = PBXGroup;
 			children = (
+				405A3FF81F8969DD00F6D2B1 /* MashapeApi */,
+				405A3FF21F819C5600F6D2B1 /* Session.swift */,
 				405A3FE01F8185E000F6D2B1 /* AppDelegate.swift */,
 				405A3FE21F8185E000F6D2B1 /* ViewController.swift */,
 				405A3FE41F8185E000F6D2B1 /* Main.storyboard */,
@@ -62,6 +70,15 @@
 				405A3FEC1F8185E000F6D2B1 /* Info.plist */,
 			);
 			path = "mashape-heartstone";
+			sourceTree = "<group>";
+		};
+		405A3FF81F8969DD00F6D2B1 /* MashapeApi */ = {
+			isa = PBXGroup;
+			children = (
+				405A3FF41F8969B000F6D2B1 /* MashapeApi.swift */,
+				405A3FF61F8969C700F6D2B1 /* Result.swift */,
+			);
+			path = MashapeApi;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,8 +153,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				405A3FF51F8969B000F6D2B1 /* MashapeApi.swift in Sources */,
+				405A3FF71F8969C700F6D2B1 /* Result.swift in Sources */,
 				405A3FE31F8185E000F6D2B1 /* ViewController.swift in Sources */,
 				405A3FE11F8185E000F6D2B1 /* AppDelegate.swift in Sources */,
+				405A3FF31F819C5600F6D2B1 /* Session.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -277,6 +297,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 79SAEB56W5;
 				INFOPLIST_FILE = "mashape-heartstone/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.capr.mashape-heartstone";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -292,6 +313,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 79SAEB56W5;
 				INFOPLIST_FILE = "mashape-heartstone/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.capr.mashape-heartstone";
 				PRODUCT_NAME = "$(TARGET_NAME)";
