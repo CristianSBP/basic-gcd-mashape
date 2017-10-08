@@ -10,7 +10,7 @@ import Foundation
 
 class MashapeApi {
     
-    private let baseURL = "https://omgvamp-hearthstone-v1.p.mashape.com"
+    private let baseURL = "https://omgvamp--hearthstone--v1-p-mashape-com-ormvxmez8gb9.runscope.net"
     
     private lazy var session: URLSession = {
         let configuration = URLSessionConfiguration.default
@@ -20,11 +20,46 @@ class MashapeApi {
         return URLSession(configuration: configuration)
     }()
     
-    public func getInfo(_ completion: @escaping (Result<Any>) -> Void) {
+    public func getInfo(_ completion: @escaping () -> Void) {
         
         let url = URL(string: "\(baseURL)/info")!
         
-        session.dataTask(with: url) { (data, urlResponse, error) in
+        session.JSONTask(with: url) { (result) in
+            switch result {
+            case .success(let json):
+                let dictionary = json as! [String: Any]
+                let object = dictionary["classes"] as! [String]
+                Session.shared.classes = object
+            case .failed(let message):
+                print(message)
+            }
+            completion()
+        }
+    }
+    
+    public func cardsBy(_ completion: @escaping () -> Void) {
+        let name = Session.shared.classes[1]
+        let url = URL(string: "\(baseURL)\(CardsBy._class(name).url)")!
+        
+        session.JSONTask(with: url) { (result) in
+            switch result {
+            case .success(let json):
+                let dictionary = json as! [[String: Any]]
+                Session.shared.cardsCount = dictionary.count
+            case .failed(let message):
+                print(message)
+            }
+            completion()
+        }
+    }
+}
+
+extension URLSession {
+    
+    public func JSONTask(with url: URL, _ completion: @escaping (Result<Any>) -> Void) {
+        
+        dataTask(with: url) { (data, urlResponse, error) in
+            print(Thread.isMainThread)
             
             if let error = error {
                 return completion(.failed(error.localizedDescription))
@@ -35,17 +70,29 @@ class MashapeApi {
             }
             
             do {
-                guard let result = try JSONSerialization.jsonObject(with: data, options: []) as? [String: Any] else {
+                if let resultJSONObject = try JSONSerialization.jsonObject(with: data, options: []) as? [String: Any] {
+                    return completion(.success(resultJSONObject))
+                } else if let resultJSONArray = try JSONSerialization.jsonObject(with: data, options: []) as? [[String: Any]] {
+                    return completion(.success(resultJSONArray))
+                } else {
                     return completion(.failed("Invalid JSON format"))
                 }
-                
-                return completion(.success(result))
             } catch {
                 return completion(.failed("Can't parse Data to JSON"))
             }
             
-            }.resume()
+        }.resume()
     }
+}
+
+enum CardsBy {
     
-    public func  
+    case _class(String)
+    
+    var url: String {
+        switch self {
+        case ._class(let name):
+            return "/cards/classes/\(name)"
+        }
+    }
 }

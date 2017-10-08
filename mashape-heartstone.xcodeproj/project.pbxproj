@@ -60,9 +60,9 @@
 		405A3FDF1F8185E000F6D2B1 /* mashape-heartstone */ = {
 			isa = PBXGroup;
 			children = (
-				405A3FF81F8969DD00F6D2B1 /* MashapeApi */,
-				405A3FF21F819C5600F6D2B1 /* Session.swift */,
 				405A3FE01F8185E000F6D2B1 /* AppDelegate.swift */,
+				405A3FF21F819C5600F6D2B1 /* Session.swift */,
+				405A3FF81F8969DD00F6D2B1 /* MashapeApi */,
 				405A3FE21F8185E000F6D2B1 /* ViewController.swift */,
 				405A3FE41F8185E000F6D2B1 /* Main.storyboard */,
 				405A3FE71F8185E000F6D2B1 /* Assets.xcassets */,

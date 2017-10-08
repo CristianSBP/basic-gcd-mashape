@@ -9,5 +9,11 @@
 import Foundation
 
 class Session {
+
+    var cards: [String] = [String]()
+    var classes: [String] = [String]()
+    var cardsCount: Int = 0
     
+    static let shared = Session()
+    private init() { }
 }
