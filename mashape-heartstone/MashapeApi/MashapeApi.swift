@@ -27,9 +27,9 @@ class MashapeApi {
         session.JSONTask(with: url) { (result) in
             switch result {
             case .success(let json):
-                let dictionary = json as! [String: Any]
-                let object = dictionary["classes"] as! [String]
-                Session.shared.classes = object
+                guard var dic = json as? [String: Any] else { return }
+                dic["patch"] = [dic["patch"]]
+                Session.shared.info = dic as! [String: [String]]
             case .failed(let message):
                 print(message)
             }

@@ -10,6 +10,8 @@ import Foundation
 
 class Session {
 
+    var info: [String: [String]] = [:]
+
     var cards: [String] = [String]()
     var classes: [String] = [String]()
     var cardsCount: Int = 0
