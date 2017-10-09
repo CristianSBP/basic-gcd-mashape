@@ -16,6 +16,8 @@
 		405A3FF51F8969B000F6D2B1 /* MashapeApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 405A3FF41F8969B000F6D2B1 /* MashapeApi.swift */; };
 		405A3FF71F8969C700F6D2B1 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 405A3FF61F8969C700F6D2B1 /* Result.swift */; };
 		405A3FFA1F8A936200F6D2B1 /* InfoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 405A3FF91F8A936200F6D2B1 /* InfoTableViewController.swift */; };
+		405A3FFC1F8AE6E800F6D2B1 /* FetchInfoWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 405A3FFB1F8AE6E800F6D2B1 /* FetchInfoWorker.swift */; };
+		405A3FFE1F8B1A3F00F6D2B1 /* CardsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 405A3FFD1F8B1A3F00F6D2B1 /* CardsTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +32,8 @@
 		405A3FF41F8969B000F6D2B1 /* MashapeApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MashapeApi.swift; sourceTree = "<group>"; };
 		405A3FF61F8969C700F6D2B1 /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
 		405A3FF91F8A936200F6D2B1 /* InfoTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoTableViewController.swift; sourceTree = "<group>"; };
+		405A3FFB1F8AE6E800F6D2B1 /* FetchInfoWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchInfoWorker.swift; sourceTree = "<group>"; };
+		405A3FFD1F8B1A3F00F6D2B1 /* CardsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,10 +71,12 @@
 				405A3FF81F8969DD00F6D2B1 /* MashapeApi */,
 				405A3FE21F8185E000F6D2B1 /* ViewController.swift */,
 				405A3FE41F8185E000F6D2B1 /* Main.storyboard */,
+				405A3FF91F8A936200F6D2B1 /* InfoTableViewController.swift */,
+				405A3FFD1F8B1A3F00F6D2B1 /* CardsTableViewController.swift */,
+				405A3FFB1F8AE6E800F6D2B1 /* FetchInfoWorker.swift */,
 				405A3FE71F8185E000F6D2B1 /* Assets.xcassets */,
 				405A3FE91F8185E000F6D2B1 /* LaunchScreen.storyboard */,
 				405A3FEC1F8185E000F6D2B1 /* Info.plist */,
-				405A3FF91F8A936200F6D2B1 /* InfoTableViewController.swift */,
 			);
 			path = "mashape-heartstone";
 			sourceTree = "<group>";
@@ -158,8 +164,10 @@
 			files = (
 				405A3FF51F8969B000F6D2B1 /* MashapeApi.swift in Sources */,
 				405A3FF71F8969C700F6D2B1 /* Result.swift in Sources */,
+				405A3FFC1F8AE6E800F6D2B1 /* FetchInfoWorker.swift in Sources */,
 				405A3FE31F8185E000F6D2B1 /* ViewController.swift in Sources */,
 				405A3FFA1F8A936200F6D2B1 /* InfoTableViewController.swift in Sources */,
+				405A3FFE1F8B1A3F00F6D2B1 /* CardsTableViewController.swift in Sources */,
 				405A3FE11F8185E000F6D2B1 /* AppDelegate.swift in Sources */,
 				405A3FF31F819C5600F6D2B1 /* Session.swift in Sources */,
 			);

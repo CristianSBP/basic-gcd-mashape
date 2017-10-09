@@ -10,12 +10,12 @@ import Foundation
 
 class Session {
 
-    var info: [String: [String]] = [:]
+    var infoWorker: FetchInfoWorker!
 
-    var cards: [String] = [String]()
-    var classes: [String] = [String]()
-    var cardsCount: Int = 0
-    
     static let shared = Session()
-    private init() { }
+    private init() {
+        if infoWorker == nil {
+            infoWorker = FetchInfoWorker()
+        }
+    }
 }

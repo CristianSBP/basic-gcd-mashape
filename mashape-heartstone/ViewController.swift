@@ -15,46 +15,37 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        DispatchQueue.global().async {
-            
-            let semaphore = DispatchSemaphore(value: 0)
-            let group = DispatchGroup()
-            
-            print("Start 1")
-            group.enter()
-            DispatchQueue.global().async {
-                MashapeApi().getInfo {
-                    semaphore.signal()
-                    print("Done 1")
-                    group.leave()
-                }
-//                for i in 0...3 {
-//                    sleep(1)
-//                    print(i)
-//                }
-            }
-            
-            _ = semaphore.wait(timeout: .distantFuture)
-            
-            print("Start 2")
-            group.enter()
-            DispatchQueue.global().async {
-                MashapeApi().cardsBy {
-                    print("Done 2")
-                    group.leave()
-                }
-//                for i in 0...3 {
-//                    sleep(1)
-//                    print(i)
-//                }
-            }
-            
-            group.notify(queue: .main) {
-                print("DONE ALL WORK")
-                self.label.text = "\(Session.shared.cardsCount)"
-            }
-            
+//        let queue = DispatchQueue(label: "com.knowstack.queue1")
+//        let queue2 = DispatchQueue(label: "queue", qos: .background, attributes: .concurrent)
+//        queue2.async {
+//            self.printApples()
+//        }
+//        queue2.async {
+//            self.printStrawberries()
+//        }
+//        queue2.async {
+//            self.printBalls()
+//        }
+    }
+    
+    func printApples(){
+        print("printApples is running on = \(Thread.isMainThread ? "Main Thread":"Background Thread")")
+        for i in 0..<3{
+            print("🍏\(i)")
         }
-        
+    }
+    
+    func printStrawberries(){
+        print("printStrawberries is running on = \(Thread.isMainThread ? "Main Thread":"Background Thread")")
+        for i in 0..<3{
+            print("🍓\(i)")
+        }
+    }
+    
+    func printBalls(){
+        print("printBalls is running on = \(Thread.isMainThread ? "Main Thread":"Background Thread")")
+        for i in 0..<3{
+            print("🎱\(i)")
+        }
     }
 }
