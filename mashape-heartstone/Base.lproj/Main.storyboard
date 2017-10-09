@@ -88,31 +88,10 @@
         <scene sceneID="CXZ-Nf-L8d">
             <objects>
                 <tableViewController id="SdJ-5u-Icu" customClass="CardsTableViewController" customModule="mashape_heartstone" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="6eb-0N-OjR">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="6eb-0N-OjR">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" rowHeight="50" id="hgo-lb-3LU">
-                                <rect key="frame" x="0.0" y="28" width="375" height="50"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="hgo-lb-3LU" id="GCE-6K-ahb">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="49.5"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                    <subviews>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="StJ-fU-V2f">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="49.5"/>
-                                        </imageView>
-                                    </subviews>
-                                    <constraints>
-                                        <constraint firstItem="StJ-fU-V2f" firstAttribute="top" secondItem="GCE-6K-ahb" secondAttribute="top" id="Dsw-pU-EHX"/>
-                                        <constraint firstAttribute="bottom" secondItem="StJ-fU-V2f" secondAttribute="bottom" id="E44-9B-k0B"/>
-                                        <constraint firstAttribute="trailing" secondItem="StJ-fU-V2f" secondAttribute="trailing" id="oDO-4f-GgA"/>
-                                        <constraint firstItem="StJ-fU-V2f" firstAttribute="leading" secondItem="GCE-6K-ahb" secondAttribute="leading" id="tKe-a8-oh2"/>
-                                    </constraints>
-                                </tableViewCellContentView>
-                            </tableViewCell>
-                        </prototypes>
                         <connections>
                             <outlet property="dataSource" destination="SdJ-5u-Icu" id="Nux-Fr-VOn"/>
                             <outlet property="delegate" destination="SdJ-5u-Icu" id="Csj-je-o96"/>

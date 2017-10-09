@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Nuke
 
 class CardsTableViewController: UITableViewController {
 
@@ -16,11 +17,13 @@ class CardsTableViewController: UITableViewController {
         }
     }
     
-    private var items: [String] = []
+    private var items: [[String: Any]] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        let nib = UINib(nibName: "ImageCell", bundle: nil)
+        tableView.register(nib, forCellReuseIdentifier: "Cell")
         Session.shared.infoWorker.delegate = self
         title = identifier
     }
@@ -36,14 +39,14 @@ class CardsTableViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
-        let label = items[indexPath.row]
-        cell.textLabel?.text = label
+        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell") as! ImageCell
+        let object = items[indexPath.row]
+        cell.loardURL(object)
         return cell
     }
     
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 50.0
+        return 500
     }
 }
 
@@ -53,5 +56,31 @@ extension CardsTableViewController: FetchInfoWorkerDelegate {
         DispatchQueue.main.async {
             self.tableView.reloadData()
         }
+    }
+}
+
+class ImageCell: UITableViewCell {
+    
+    @IBOutlet weak var cardImage: UIImageView!
+    @IBOutlet weak var indicator: UIActivityIndicatorView!
+    
+    func loardURL(_ object: [String: Any]) {
+        indicator.startAnimating()
+        if let img = object["img"] as? String, let url = URL(string: img) {
+            print("LOAD -> \(self)")
+            Nuke.loadImage(with: url, into: self, handler: { [weak self] (result, bool) in
+                self?.cardImage.image = result.value
+                self?.indicator.stopAnimating()
+            })
+        }
+    }
+    
+    override func prepareForReuse() {
+        super.prepareForReuse()
+        
+        print("CANCEL -> \(self)")
+        Nuke.cancelRequest(for: self)
+        cardImage.layer.removeAllAnimations()
+        cardImage.image = nil
     }
 }

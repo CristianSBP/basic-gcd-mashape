@@ -18,6 +18,7 @@
 		405A3FFA1F8A936200F6D2B1 /* InfoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 405A3FF91F8A936200F6D2B1 /* InfoTableViewController.swift */; };
 		405A3FFC1F8AE6E800F6D2B1 /* FetchInfoWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 405A3FFB1F8AE6E800F6D2B1 /* FetchInfoWorker.swift */; };
 		405A3FFE1F8B1A3F00F6D2B1 /* CardsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 405A3FFD1F8B1A3F00F6D2B1 /* CardsTableViewController.swift */; };
+		405A40001F8B3C3F00F6D2B1 /* ImageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 405A3FFF1F8B3C3F00F6D2B1 /* ImageCell.xib */; };
 		D60115EA51A6098C374128F8 /* Pods_mashape_heartstone.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5AE9F6A0A963D8AB7C5A304E /* Pods_mashape_heartstone.framework */; };
 /* End PBXBuildFile section */
 
@@ -35,6 +36,7 @@
 		405A3FF91F8A936200F6D2B1 /* InfoTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoTableViewController.swift; sourceTree = "<group>"; };
 		405A3FFB1F8AE6E800F6D2B1 /* FetchInfoWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchInfoWorker.swift; sourceTree = "<group>"; };
 		405A3FFD1F8B1A3F00F6D2B1 /* CardsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsTableViewController.swift; sourceTree = "<group>"; };
+		405A3FFF1F8B3C3F00F6D2B1 /* ImageCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ImageCell.xib; sourceTree = "<group>"; };
 		5AE9F6A0A963D8AB7C5A304E /* Pods_mashape_heartstone.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_mashape_heartstone.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C012106091DA3CEF2326E2BC /* Pods-mashape-heartstone.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mashape-heartstone.debug.xcconfig"; path = "Pods/Target Support Files/Pods-mashape-heartstone/Pods-mashape-heartstone.debug.xcconfig"; sourceTree = "<group>"; };
 		FDFE69EEDBC27E5923DBD44C /* Pods-mashape-heartstone.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mashape-heartstone.release.xcconfig"; path = "Pods/Target Support Files/Pods-mashape-heartstone/Pods-mashape-heartstone.release.xcconfig"; sourceTree = "<group>"; };
@@ -101,6 +103,7 @@
 				405A3FE71F8185E000F6D2B1 /* Assets.xcassets */,
 				405A3FE91F8185E000F6D2B1 /* LaunchScreen.storyboard */,
 				405A3FEC1F8185E000F6D2B1 /* Info.plist */,
+				405A3FFF1F8B3C3F00F6D2B1 /* ImageCell.xib */,
 			);
 			path = "mashape-heartstone";
 			sourceTree = "<group>";
@@ -177,6 +180,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				405A3FEB1F8185E000F6D2B1 /* LaunchScreen.storyboard in Resources */,
+				405A40001F8B3C3F00F6D2B1 /* ImageCell.xib in Resources */,
 				405A3FE81F8185E000F6D2B1 /* Assets.xcassets in Resources */,
 				405A3FE61F8185E000F6D2B1 /* Main.storyboard in Resources */,
 			);

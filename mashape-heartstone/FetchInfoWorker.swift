@@ -44,8 +44,8 @@ class FetchInfoWorker {
         return info[section]!
     }
     
-    public func cardsBy(name: String) -> [String] {
-        return cardsByClasses[name]?.map({ $0.description }) ?? []
+    public func cardsBy(name: String) -> [[String: Any]] {
+        return cardsByClasses[name] ?? []
     }
     
     init() {
