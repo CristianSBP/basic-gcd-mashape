@@ -19,6 +19,26 @@
 		405A3FFC1F8AE6E800F6D2B1 /* FetchInfoWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 405A3FFB1F8AE6E800F6D2B1 /* FetchInfoWorker.swift */; };
 		405A3FFE1F8B1A3F00F6D2B1 /* CardsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 405A3FFD1F8B1A3F00F6D2B1 /* CardsTableViewController.swift */; };
 		405A40001F8B3C3F00F6D2B1 /* ImageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 405A3FFF1F8B3C3F00F6D2B1 /* ImageCell.xib */; };
+		409BAEFF1F9854BF00704AF9 /* PatchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 409BAEFD1F9854BF00704AF9 /* PatchTableViewCell.swift */; };
+		409BAF031F9874D600704AF9 /* ClassesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 409BAF011F9874D600704AF9 /* ClassesTableViewCell.swift */; };
+		409BAF041F9874D600704AF9 /* ClassesTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 409BAF021F9874D600704AF9 /* ClassesTableViewCell.xib */; };
+		409BAF061F9875AA00704AF9 /* PatchTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 409BAF051F9875AA00704AF9 /* PatchTableViewCell.xib */; };
+		409BAF091F9875FF00704AF9 /* SetsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 409BAF071F9875FF00704AF9 /* SetsTableViewCell.swift */; };
+		409BAF0A1F9875FF00704AF9 /* SetsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 409BAF081F9875FF00704AF9 /* SetsTableViewCell.xib */; };
+		409BAF0D1F98760600704AF9 /* TypesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 409BAF0B1F98760600704AF9 /* TypesTableViewCell.swift */; };
+		409BAF0E1F98760600704AF9 /* TypesTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 409BAF0C1F98760600704AF9 /* TypesTableViewCell.xib */; };
+		409BAF111F98761300704AF9 /* FactionsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 409BAF0F1F98761300704AF9 /* FactionsTableViewCell.swift */; };
+		409BAF121F98761300704AF9 /* FactionsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 409BAF101F98761300704AF9 /* FactionsTableViewCell.xib */; };
+		409BAF151F98761C00704AF9 /* QualitiesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 409BAF131F98761C00704AF9 /* QualitiesTableViewCell.swift */; };
+		409BAF161F98761C00704AF9 /* QualitiesTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 409BAF141F98761C00704AF9 /* QualitiesTableViewCell.xib */; };
+		409BAF191F98762800704AF9 /* RacesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 409BAF171F98762800704AF9 /* RacesTableViewCell.swift */; };
+		409BAF1A1F98762800704AF9 /* RacesTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 409BAF181F98762800704AF9 /* RacesTableViewCell.xib */; };
+		409BAF1D1F98763000704AF9 /* LocalesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 409BAF1B1F98763000704AF9 /* LocalesTableViewCell.swift */; };
+		409BAF1E1F98763000704AF9 /* LocalesTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 409BAF1C1F98763000704AF9 /* LocalesTableViewCell.xib */; };
+		40CD99221F9067A800573957 /* Info.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40CD99211F9067A800573957 /* Info.swift */; };
+		40CD99241F9067B800573957 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40CD99231F9067B800573957 /* Card.swift */; };
+		40CD99271F906B1D00573957 /* Mapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40CD99261F906B1D00573957 /* Mapper.swift */; };
+		40CD992A1F90765500573957 /* InfoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40CD99291F90765500573957 /* InfoViewModel.swift */; };
 		D60115EA51A6098C374128F8 /* Pods_mashape_heartstone.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5AE9F6A0A963D8AB7C5A304E /* Pods_mashape_heartstone.framework */; };
 /* End PBXBuildFile section */
 
@@ -37,6 +57,26 @@
 		405A3FFB1F8AE6E800F6D2B1 /* FetchInfoWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchInfoWorker.swift; sourceTree = "<group>"; };
 		405A3FFD1F8B1A3F00F6D2B1 /* CardsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsTableViewController.swift; sourceTree = "<group>"; };
 		405A3FFF1F8B3C3F00F6D2B1 /* ImageCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ImageCell.xib; sourceTree = "<group>"; };
+		409BAEFD1F9854BF00704AF9 /* PatchTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatchTableViewCell.swift; sourceTree = "<group>"; };
+		409BAF011F9874D600704AF9 /* ClassesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassesTableViewCell.swift; sourceTree = "<group>"; };
+		409BAF021F9874D600704AF9 /* ClassesTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ClassesTableViewCell.xib; sourceTree = "<group>"; };
+		409BAF051F9875AA00704AF9 /* PatchTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PatchTableViewCell.xib; sourceTree = "<group>"; };
+		409BAF071F9875FF00704AF9 /* SetsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetsTableViewCell.swift; sourceTree = "<group>"; };
+		409BAF081F9875FF00704AF9 /* SetsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SetsTableViewCell.xib; sourceTree = "<group>"; };
+		409BAF0B1F98760600704AF9 /* TypesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypesTableViewCell.swift; sourceTree = "<group>"; };
+		409BAF0C1F98760600704AF9 /* TypesTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TypesTableViewCell.xib; sourceTree = "<group>"; };
+		409BAF0F1F98761300704AF9 /* FactionsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactionsTableViewCell.swift; sourceTree = "<group>"; };
+		409BAF101F98761300704AF9 /* FactionsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FactionsTableViewCell.xib; sourceTree = "<group>"; };
+		409BAF131F98761C00704AF9 /* QualitiesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QualitiesTableViewCell.swift; sourceTree = "<group>"; };
+		409BAF141F98761C00704AF9 /* QualitiesTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QualitiesTableViewCell.xib; sourceTree = "<group>"; };
+		409BAF171F98762800704AF9 /* RacesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RacesTableViewCell.swift; sourceTree = "<group>"; };
+		409BAF181F98762800704AF9 /* RacesTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RacesTableViewCell.xib; sourceTree = "<group>"; };
+		409BAF1B1F98763000704AF9 /* LocalesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalesTableViewCell.swift; sourceTree = "<group>"; };
+		409BAF1C1F98763000704AF9 /* LocalesTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LocalesTableViewCell.xib; sourceTree = "<group>"; };
+		40CD99211F9067A800573957 /* Info.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Info.swift; sourceTree = "<group>"; };
+		40CD99231F9067B800573957 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		40CD99261F906B1D00573957 /* Mapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mapper.swift; sourceTree = "<group>"; };
+		40CD99291F90765500573957 /* InfoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoViewModel.swift; sourceTree = "<group>"; };
 		5AE9F6A0A963D8AB7C5A304E /* Pods_mashape_heartstone.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_mashape_heartstone.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C012106091DA3CEF2326E2BC /* Pods-mashape-heartstone.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mashape-heartstone.debug.xcconfig"; path = "Pods/Target Support Files/Pods-mashape-heartstone/Pods-mashape-heartstone.debug.xcconfig"; sourceTree = "<group>"; };
 		FDFE69EEDBC27E5923DBD44C /* Pods-mashape-heartstone.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mashape-heartstone.release.xcconfig"; path = "Pods/Target Support Files/Pods-mashape-heartstone/Pods-mashape-heartstone.release.xcconfig"; sourceTree = "<group>"; };
@@ -93,11 +133,14 @@
 			isa = PBXGroup;
 			children = (
 				405A3FE01F8185E000F6D2B1 /* AppDelegate.swift */,
+				40CD99251F906B0F00573957 /* Utilities */,
+				40CD99201F90676D00573957 /* Models */,
+				40CD99281F9075B100573957 /* ViewModel */,
+				40CD992B1F9081E100573957 /* Views */,
 				405A3FF21F819C5600F6D2B1 /* Session.swift */,
 				405A3FF81F8969DD00F6D2B1 /* MashapeApi */,
 				405A3FE21F8185E000F6D2B1 /* ViewController.swift */,
 				405A3FE41F8185E000F6D2B1 /* Main.storyboard */,
-				405A3FF91F8A936200F6D2B1 /* InfoTableViewController.swift */,
 				405A3FFD1F8B1A3F00F6D2B1 /* CardsTableViewController.swift */,
 				405A3FFB1F8AE6E800F6D2B1 /* FetchInfoWorker.swift */,
 				405A3FE71F8185E000F6D2B1 /* Assets.xcassets */,
@@ -115,6 +158,63 @@
 				405A3FF61F8969C700F6D2B1 /* Result.swift */,
 			);
 			path = MashapeApi;
+			sourceTree = "<group>";
+		};
+		409BAEFC1F9854A900704AF9 /* InfoCells */ = {
+			isa = PBXGroup;
+			children = (
+				409BAEFD1F9854BF00704AF9 /* PatchTableViewCell.swift */,
+				409BAF051F9875AA00704AF9 /* PatchTableViewCell.xib */,
+				409BAF011F9874D600704AF9 /* ClassesTableViewCell.swift */,
+				409BAF021F9874D600704AF9 /* ClassesTableViewCell.xib */,
+				409BAF071F9875FF00704AF9 /* SetsTableViewCell.swift */,
+				409BAF081F9875FF00704AF9 /* SetsTableViewCell.xib */,
+				409BAF0B1F98760600704AF9 /* TypesTableViewCell.swift */,
+				409BAF0C1F98760600704AF9 /* TypesTableViewCell.xib */,
+				409BAF0F1F98761300704AF9 /* FactionsTableViewCell.swift */,
+				409BAF101F98761300704AF9 /* FactionsTableViewCell.xib */,
+				409BAF131F98761C00704AF9 /* QualitiesTableViewCell.swift */,
+				409BAF141F98761C00704AF9 /* QualitiesTableViewCell.xib */,
+				409BAF171F98762800704AF9 /* RacesTableViewCell.swift */,
+				409BAF181F98762800704AF9 /* RacesTableViewCell.xib */,
+				409BAF1B1F98763000704AF9 /* LocalesTableViewCell.swift */,
+				409BAF1C1F98763000704AF9 /* LocalesTableViewCell.xib */,
+			);
+			path = InfoCells;
+			sourceTree = "<group>";
+		};
+		40CD99201F90676D00573957 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				40CD99211F9067A800573957 /* Info.swift */,
+				40CD99231F9067B800573957 /* Card.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		40CD99251F906B0F00573957 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				40CD99261F906B1D00573957 /* Mapper.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		40CD99281F9075B100573957 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				40CD99291F90765500573957 /* InfoViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		40CD992B1F9081E100573957 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				405A3FF91F8A936200F6D2B1 /* InfoTableViewController.swift */,
+				409BAEFC1F9854A900704AF9 /* InfoCells */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -179,7 +279,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				409BAF0A1F9875FF00704AF9 /* SetsTableViewCell.xib in Resources */,
+				409BAF0E1F98760600704AF9 /* TypesTableViewCell.xib in Resources */,
+				409BAF161F98761C00704AF9 /* QualitiesTableViewCell.xib in Resources */,
+				409BAF1E1F98763000704AF9 /* LocalesTableViewCell.xib in Resources */,
+				409BAF1A1F98762800704AF9 /* RacesTableViewCell.xib in Resources */,
 				405A3FEB1F8185E000F6D2B1 /* LaunchScreen.storyboard in Resources */,
+				409BAF061F9875AA00704AF9 /* PatchTableViewCell.xib in Resources */,
+				409BAF041F9874D600704AF9 /* ClassesTableViewCell.xib in Resources */,
+				409BAF121F98761300704AF9 /* FactionsTableViewCell.xib in Resources */,
 				405A40001F8B3C3F00F6D2B1 /* ImageCell.xib in Resources */,
 				405A3FE81F8185E000F6D2B1 /* Assets.xcassets in Resources */,
 				405A3FE61F8185E000F6D2B1 /* Main.storyboard in Resources */,
@@ -196,11 +304,15 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-mashape-heartstone/Pods-mashape-heartstone-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/Nuke/Nuke.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nuke.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -247,12 +359,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				409BAF191F98762800704AF9 /* RacesTableViewCell.swift in Sources */,
 				405A3FF51F8969B000F6D2B1 /* MashapeApi.swift in Sources */,
 				405A3FF71F8969C700F6D2B1 /* Result.swift in Sources */,
+				40CD992A1F90765500573957 /* InfoViewModel.swift in Sources */,
+				409BAF091F9875FF00704AF9 /* SetsTableViewCell.swift in Sources */,
+				409BAF0D1F98760600704AF9 /* TypesTableViewCell.swift in Sources */,
+				409BAF111F98761300704AF9 /* FactionsTableViewCell.swift in Sources */,
+				409BAEFF1F9854BF00704AF9 /* PatchTableViewCell.swift in Sources */,
+				409BAF031F9874D600704AF9 /* ClassesTableViewCell.swift in Sources */,
 				405A3FFC1F8AE6E800F6D2B1 /* FetchInfoWorker.swift in Sources */,
+				409BAF1D1F98763000704AF9 /* LocalesTableViewCell.swift in Sources */,
+				40CD99221F9067A800573957 /* Info.swift in Sources */,
+				40CD99271F906B1D00573957 /* Mapper.swift in Sources */,
 				405A3FE31F8185E000F6D2B1 /* ViewController.swift in Sources */,
 				405A3FFA1F8A936200F6D2B1 /* InfoTableViewController.swift in Sources */,
+				409BAF151F98761C00704AF9 /* QualitiesTableViewCell.swift in Sources */,
 				405A3FFE1F8B1A3F00F6D2B1 /* CardsTableViewController.swift in Sources */,
+				40CD99241F9067B800573957 /* Card.swift in Sources */,
 				405A3FE11F8185E000F6D2B1 /* AppDelegate.swift in Sources */,
 				405A3FF31F819C5600F6D2B1 /* Session.swift in Sources */,
 			);

@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import SwiftyJSON
 
 class MashapeApi {
     
@@ -19,6 +20,20 @@ class MashapeApi {
         configuration.timeoutIntervalForRequest = TimeInterval(30.0)
         return URLSession(configuration: configuration)
     }()
+    
+    public func fetchInfo(_ completion: @escaping (Info?) -> Void) {
+        let _url = URL(string: "\(baseURL)/info")!
+        session.JSONTask(with: _url) { result in
+            switch result {
+            case .success(let json):
+                let sjson = JSON(json)
+                let info = Info(json: sjson)
+                completion(info)
+            case .failed(_):
+                completion(nil)
+            }
+        }
+    }
 }
 
 extension URLSession {

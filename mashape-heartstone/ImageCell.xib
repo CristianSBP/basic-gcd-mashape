@@ -23,19 +23,30 @@
                     <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="iq3-9w-iR0">
                         <rect key="frame" x="177" y="239" width="20" height="20"/>
                     </activityIndicatorView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uyd-4Q-7Eb">
+                        <rect key="frame" x="24" y="237" width="327" height="26.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
                 </subviews>
                 <constraints>
+                    <constraint firstItem="Uyd-4Q-7Eb" firstAttribute="centerY" secondItem="WJU-Eg-2Yv" secondAttribute="centerY" id="0Hx-fT-yfQ"/>
+                    <constraint firstItem="Uyd-4Q-7Eb" firstAttribute="leading" secondItem="WJU-Eg-2Yv" secondAttribute="leading" constant="24" id="1AK-Zu-PhI"/>
                     <constraint firstItem="gt8-Kf-wud" firstAttribute="leading" secondItem="WJU-Eg-2Yv" secondAttribute="leading" id="DE3-IR-GWg"/>
+                    <constraint firstAttribute="trailing" secondItem="Uyd-4Q-7Eb" secondAttribute="trailing" constant="24" id="NOu-b1-LPf"/>
                     <constraint firstAttribute="trailing" secondItem="gt8-Kf-wud" secondAttribute="trailing" id="RWm-6A-Mac"/>
                     <constraint firstAttribute="bottom" secondItem="gt8-Kf-wud" secondAttribute="bottom" id="a0V-uc-gIx"/>
                     <constraint firstItem="iq3-9w-iR0" firstAttribute="centerX" secondItem="WJU-Eg-2Yv" secondAttribute="centerX" id="eO4-1Q-mDu"/>
                     <constraint firstItem="iq3-9w-iR0" firstAttribute="centerY" secondItem="WJU-Eg-2Yv" secondAttribute="centerY" id="hgF-U0-eMW"/>
                     <constraint firstItem="gt8-Kf-wud" firstAttribute="top" secondItem="WJU-Eg-2Yv" secondAttribute="top" id="tKv-kB-nJx"/>
+                    <constraint firstItem="Uyd-4Q-7Eb" firstAttribute="centerX" secondItem="WJU-Eg-2Yv" secondAttribute="centerX" id="znF-RX-5Hv"/>
                 </constraints>
             </tableViewCellContentView>
             <connections>
                 <outlet property="cardImage" destination="gt8-Kf-wud" id="rjh-Pf-mCY"/>
                 <outlet property="indicator" destination="iq3-9w-iR0" id="3rI-d5-rWo"/>
+                <outlet property="label" destination="Uyd-4Q-7Eb" id="hxq-Vd-aDA"/>
             </connections>
         </tableViewCell>
     </objects>

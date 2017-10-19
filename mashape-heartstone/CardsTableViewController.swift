@@ -63,24 +63,26 @@ class ImageCell: UITableViewCell {
     
     @IBOutlet weak var cardImage: UIImageView!
     @IBOutlet weak var indicator: UIActivityIndicatorView!
+    @IBOutlet weak var label: UILabel!
     
     func loardURL(_ object: [String: Any]) {
         indicator.startAnimating()
+        
         if let img = object["img"] as? String, let url = URL(string: img) {
-            print("LOAD -> \(self)")
+            
             Nuke.loadImage(with: url, into: self, handler: { [weak self] (result, bool) in
                 self?.cardImage.image = result.value
                 self?.indicator.stopAnimating()
             })
+        } else {
+            
+            indicator.stopAnimating()
+            label.text = (object["name"] as! String)
         }
     }
     
     override func prepareForReuse() {
         super.prepareForReuse()
-        
-        print("CANCEL -> \(self)")
         Nuke.cancelRequest(for: self)
-        cardImage.layer.removeAllAnimations()
-        cardImage.image = nil
     }
 }
