@@ -55,7 +55,7 @@ class InfoViewModel: NSObject {
     }
 }
 
-extension InfoViewModel: UITableViewDataSource {
+extension InfoViewModel: UITableViewDataSource, UITableViewDelegate {
     
     func numberOfSections(in tableView: UITableView) -> Int {
         return items.count
@@ -98,8 +98,7 @@ extension InfoViewModel: UITableViewDataSource {
             return cell!
         case .qualities:
             let cell = tableView.dequeueReusableCell(withIdentifier: QualitiesTableViewCell.identifier, for: indexPath) as? QualitiesTableViewCell
-            let item = item as? InfoViewModelQualitiesItem
-            cell?.item = item?.qualities[indexPath.row]
+            cell?.item = item
             return cell!
         case .races:
             let cell = tableView.dequeueReusableCell(withIdentifier: RacesTableViewCell.identifier, for: indexPath) as? RacesTableViewCell
@@ -113,172 +112,16 @@ extension InfoViewModel: UITableViewDataSource {
             return cell!
         }
     }
-}
 
-class InfoViewModelPatchItem: InfoViewModelItem {
-    
-    var infoCellType: InfoCellType {
-        return .patch
-    }
-    
-    var sectionTitle: String {
-        return "Patch"
-    }
-    
-    var rowCount: Int {
-        return 1
-    }
-    
-    public var patch: String
-    
-    init(patch: String) {
-        self.patch = patch
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        let item = items[indexPath.section]
+        switch item.infoCellType {
+        case .qualities:
+            return 100.0
+        default:
+            return 50.0
+        }
     }
 }
 
-class InfoViewModelClassesItem: InfoViewModelItem {
 
-    var infoCellType: InfoCellType {
-        return .classes
-    }
-    
-    var sectionTitle: String {
-        return "Classes"
-    }
-    
-    var rowCount: Int {
-        return classes.count
-    }
-    
-    public var classes: [String]
-    
-    init(classes: [String]) {
-        self.classes = classes
-    }
-}
-
-class InfoViewModelSetsItem: InfoViewModelItem {
-    
-    var infoCellType: InfoCellType {
-        return .sets
-    }
-    
-    var sectionTitle: String {
-        return "Sets"
-    }
-    
-    var rowCount: Int {
-        return sets.count
-    }
-    
-    public var sets: [String]
-    
-    init(sets: [String]) {
-        self.sets = sets
-    }
-}
-
-class InfoViewModelTypesItem: InfoViewModelItem {
-    
-    var infoCellType: InfoCellType {
-        return .types
-    }
-    
-    var sectionTitle: String {
-        return "Types"
-    }
-    
-    var rowCount: Int {
-        return types.count
-    }
-
-    public var types: [String]
-    
-    init(types: [String]) {
-        self.types = types
-    }
-}
-
-class InfoViewModelFactionsItem: InfoViewModelItem {
-    
-    var infoCellType: InfoCellType {
-        return .factions
-    }
-    
-    var sectionTitle: String {
-        return "Factions"
-    }
-    
-    var rowCount: Int {
-        return factions.count
-    }
-    
-    public var factions: [String]
-    
-    init(factions: [String]) {
-        self.factions = factions
-    }
-}
-
-class InfoViewModelQualitiesItem: InfoViewModelItem {
-    
-    var infoCellType: InfoCellType {
-        return .qualities
-    }
-    
-    var sectionTitle: String {
-        return "Qualities"
-    }
-    
-    var rowCount: Int {
-        return qualities.count
-    }
-    
-    public var qualities: [String]
-    
-    init(qualities: [String]) {
-        self.qualities = qualities
-    }
-}
-
-class InfoViewModelRacesItem: InfoViewModelItem {
-    
-    var infoCellType: InfoCellType {
-        return .races
-    }
-    
-    var sectionTitle: String {
-        return "Races"
-    }
-    
-    var rowCount: Int {
-        return races.count
-    }
-    
-    public var races: [String]
-    
-    init(races: [String]) {
-        self.races = races
-    }
-}
-
-class InfoViewModelLocalesItem: InfoViewModelItem {
-    
-    var infoCellType: InfoCellType {
-        return .locales
-    }
-    
-    var sectionTitle: String {
-        return "Locales"
-    }
-    
-    var rowCount: Int {
-        return locales.count
-    }
-    
-    public var locales: [String]
-    
-    init(locales: [String]) {
-        self.locales = locales
-    }
-}

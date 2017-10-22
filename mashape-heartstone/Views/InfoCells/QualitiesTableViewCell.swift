@@ -10,12 +10,12 @@ import UIKit
 
 class QualitiesTableViewCell: UITableViewCell {
 
-    @IBOutlet weak var qualityLabel: UILabel?
+    @IBOutlet weak var qualitiesCollectionView: UICollectionView?
     
-    var item: String? {
+    var item: InfoViewModelItem? {
         didSet {
-            guard let item = item else { return }
-            qualityLabel?.text = item
+            guard let item = item as? InfoViewModelQualitiesItem else { return }
+            qualitiesCollectionView?.dataSource = item
         }
     }
     
@@ -29,13 +29,6 @@ class QualitiesTableViewCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        qualitiesCollectionView?.register(QualityCollectionViewCell.nib, forCellWithReuseIdentifier: QualityCollectionViewCell.identifier)
     }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
-    }
-    
 }

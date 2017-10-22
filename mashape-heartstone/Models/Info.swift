@@ -9,7 +9,7 @@
 import Foundation
 import SwiftyJSON
 
-struct Info: Mapper {
+class Info: Mapper {
     
     public var patch: String!
     public var classes: [String] = []
@@ -20,7 +20,9 @@ struct Info: Mapper {
     public var races: [String] = []
     public var locales: [String] = []
     
-    init?(json: JSON) {
+    init() { }
+
+    required init?(json: JSON) {
         
         guard
             let patch = json["patch"].string,
@@ -41,5 +43,9 @@ struct Info: Mapper {
         self.qualities = qualities.map(String.init)
         self.races = races.map(String.init)
         self.locales = locales.map(String.init)
+    }
+    
+    public func getInfo() {
+        
     }
 }

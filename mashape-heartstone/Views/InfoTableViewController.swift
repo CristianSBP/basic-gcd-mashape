@@ -23,8 +23,7 @@ class InfoTableViewController: UIViewController {
     
     private func prepare() {
         tableView.dataSource = infoViewModel
-        tableView.estimatedRowHeight = 75
-        tableView.rowHeight = UITableViewAutomaticDimension
+        tableView.delegate = infoViewModel
     }
     
     private func registerCells() {

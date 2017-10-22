@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "78914ABB6C0136DEFAAA7E6462F070FF"
+               BlueprintIdentifier = "5164D005FA7E8280A8C4EF495A388D38"
                BuildableName = "Pods_mashape_heartstone.framework"
                BlueprintName = "Pods-mashape-heartstone"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -47,7 +47,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "78914ABB6C0136DEFAAA7E6462F070FF"
+            BlueprintIdentifier = "5164D005FA7E8280A8C4EF495A388D38"
             BuildableName = "Pods_mashape_heartstone.framework"
             BlueprintName = "Pods-mashape-heartstone"
             ReferencedContainer = "container:Pods.xcodeproj">
