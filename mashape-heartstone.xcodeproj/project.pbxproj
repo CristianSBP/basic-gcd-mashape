@@ -18,17 +18,18 @@
 		404AAA8A1F9B172B0006DD36 /* QualityCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 404AAA881F9B172B0006DD36 /* QualityCollectionViewCell.swift */; };
 		404AAA8B1F9B172B0006DD36 /* QualityCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 404AAA891F9B172B0006DD36 /* QualityCollectionViewCell.xib */; };
 		405A3FE11F8185E000F6D2B1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 405A3FE01F8185E000F6D2B1 /* AppDelegate.swift */; };
-		405A3FE31F8185E000F6D2B1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 405A3FE21F8185E000F6D2B1 /* ViewController.swift */; };
 		405A3FE61F8185E000F6D2B1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 405A3FE41F8185E000F6D2B1 /* Main.storyboard */; };
 		405A3FE81F8185E000F6D2B1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 405A3FE71F8185E000F6D2B1 /* Assets.xcassets */; };
 		405A3FEB1F8185E000F6D2B1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 405A3FE91F8185E000F6D2B1 /* LaunchScreen.storyboard */; };
-		405A3FF31F819C5600F6D2B1 /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = 405A3FF21F819C5600F6D2B1 /* Session.swift */; };
 		405A3FF51F8969B000F6D2B1 /* MashapeApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 405A3FF41F8969B000F6D2B1 /* MashapeApi.swift */; };
 		405A3FF71F8969C700F6D2B1 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 405A3FF61F8969C700F6D2B1 /* Result.swift */; };
 		405A3FFA1F8A936200F6D2B1 /* InfoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 405A3FF91F8A936200F6D2B1 /* InfoTableViewController.swift */; };
-		405A3FFC1F8AE6E800F6D2B1 /* FetchInfoWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 405A3FFB1F8AE6E800F6D2B1 /* FetchInfoWorker.swift */; };
-		405A3FFE1F8B1A3F00F6D2B1 /* CardsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 405A3FFD1F8B1A3F00F6D2B1 /* CardsTableViewController.swift */; };
-		405A40001F8B3C3F00F6D2B1 /* ImageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 405A3FFF1F8B3C3F00F6D2B1 /* ImageCell.xib */; };
+		406735371F9D5D1900B546ED /* Quality.swift in Sources */ = {isa = PBXBuildFile; fileRef = 406735361F9D5D1900B546ED /* Quality.swift */; };
+		406735391F9D680E00B546ED /* CardsCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 406735381F9D680E00B546ED /* CardsCollectionViewController.swift */; };
+		4067353B1F9D68F400B546ED /* CardsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4067353A1F9D68F400B546ED /* CardsViewModel.swift */; };
+		4067353E1F9D947600B546ED /* CardCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4067353C1F9D947600B546ED /* CardCollectionViewCell.swift */; };
+		4067353F1F9D947600B546ED /* CardCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4067353D1F9D947600B546ED /* CardCollectionViewCell.xib */; };
+		406735411F9DA11900B546ED /* CardViewModelItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 406735401F9DA11900B546ED /* CardViewModelItem.swift */; };
 		409BAEFF1F9854BF00704AF9 /* PatchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 409BAEFD1F9854BF00704AF9 /* PatchTableViewCell.swift */; };
 		409BAF031F9874D600704AF9 /* ClassesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 409BAF011F9874D600704AF9 /* ClassesTableViewCell.swift */; };
 		409BAF041F9874D600704AF9 /* ClassesTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 409BAF021F9874D600704AF9 /* ClassesTableViewCell.xib */; };
@@ -50,8 +51,6 @@
 		40CD99271F906B1D00573957 /* Mapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40CD99261F906B1D00573957 /* Mapper.swift */; };
 		40CD992A1F90765500573957 /* InfoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40CD99291F90765500573957 /* InfoViewModel.swift */; };
 		40F4A6EF1F9B181F006AB84B /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40F4A6EE1F9B181F006AB84B /* R.generated.swift */; };
-		40F4A6F31F9D53D6006AB84B /* InfoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40F4A6F11F9D53D6006AB84B /* InfoTableViewCell.swift */; };
-		40F4A6F41F9D53D6006AB84B /* InfoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 40F4A6F21F9D53D6006AB84B /* InfoTableViewCell.xib */; };
 		D60115EA51A6098C374128F8 /* Pods_mashape_heartstone.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5AE9F6A0A963D8AB7C5A304E /* Pods_mashape_heartstone.framework */; };
 /* End PBXBuildFile section */
 
@@ -68,18 +67,19 @@
 		404AAA891F9B172B0006DD36 /* QualityCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QualityCollectionViewCell.xib; sourceTree = "<group>"; };
 		405A3FDD1F8185E000F6D2B1 /* mashape-heartstone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "mashape-heartstone.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		405A3FE01F8185E000F6D2B1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		405A3FE21F8185E000F6D2B1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		405A3FE51F8185E000F6D2B1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		405A3FE71F8185E000F6D2B1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		405A3FEA1F8185E000F6D2B1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		405A3FEC1F8185E000F6D2B1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		405A3FF21F819C5600F6D2B1 /* Session.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Session.swift; sourceTree = "<group>"; };
 		405A3FF41F8969B000F6D2B1 /* MashapeApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MashapeApi.swift; sourceTree = "<group>"; };
 		405A3FF61F8969C700F6D2B1 /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
 		405A3FF91F8A936200F6D2B1 /* InfoTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoTableViewController.swift; sourceTree = "<group>"; };
-		405A3FFB1F8AE6E800F6D2B1 /* FetchInfoWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchInfoWorker.swift; sourceTree = "<group>"; };
-		405A3FFD1F8B1A3F00F6D2B1 /* CardsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsTableViewController.swift; sourceTree = "<group>"; };
-		405A3FFF1F8B3C3F00F6D2B1 /* ImageCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ImageCell.xib; sourceTree = "<group>"; };
+		406735361F9D5D1900B546ED /* Quality.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quality.swift; sourceTree = "<group>"; };
+		406735381F9D680E00B546ED /* CardsCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsCollectionViewController.swift; sourceTree = "<group>"; };
+		4067353A1F9D68F400B546ED /* CardsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsViewModel.swift; sourceTree = "<group>"; };
+		4067353C1F9D947600B546ED /* CardCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardCollectionViewCell.swift; sourceTree = "<group>"; };
+		4067353D1F9D947600B546ED /* CardCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CardCollectionViewCell.xib; sourceTree = "<group>"; };
+		406735401F9DA11900B546ED /* CardViewModelItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardViewModelItem.swift; sourceTree = "<group>"; };
 		409BAEFD1F9854BF00704AF9 /* PatchTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatchTableViewCell.swift; sourceTree = "<group>"; };
 		409BAF011F9874D600704AF9 /* ClassesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassesTableViewCell.swift; sourceTree = "<group>"; };
 		409BAF021F9874D600704AF9 /* ClassesTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ClassesTableViewCell.xib; sourceTree = "<group>"; };
@@ -101,8 +101,6 @@
 		40CD99261F906B1D00573957 /* Mapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mapper.swift; sourceTree = "<group>"; };
 		40CD99291F90765500573957 /* InfoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoViewModel.swift; sourceTree = "<group>"; };
 		40F4A6EE1F9B181F006AB84B /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = "<group>"; };
-		40F4A6F11F9D53D6006AB84B /* InfoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoTableViewCell.swift; sourceTree = "<group>"; };
-		40F4A6F21F9D53D6006AB84B /* InfoTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InfoTableViewCell.xib; sourceTree = "<group>"; };
 		5AE9F6A0A963D8AB7C5A304E /* Pods_mashape_heartstone.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_mashape_heartstone.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C012106091DA3CEF2326E2BC /* Pods-mashape-heartstone.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mashape-heartstone.debug.xcconfig"; path = "Pods/Target Support Files/Pods-mashape-heartstone/Pods-mashape-heartstone.debug.xcconfig"; sourceTree = "<group>"; };
 		FDFE69EEDBC27E5923DBD44C /* Pods-mashape-heartstone.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mashape-heartstone.release.xcconfig"; path = "Pods/Target Support Files/Pods-mashape-heartstone/Pods-mashape-heartstone.release.xcconfig"; sourceTree = "<group>"; };
@@ -137,7 +135,7 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		404AAA761F9B14D20006DD36 /* Cells View Model */ = {
+		404AAA761F9B14D20006DD36 /* Info */ = {
 			isa = PBXGroup;
 			children = (
 				404AAA771F9B14F50006DD36 /* InfoViewModelQualitiesItem.swift */,
@@ -149,7 +147,7 @@
 				404AAA831F9B162B0006DD36 /* InfoViewModelClassesItem.swift */,
 				404AAA851F9B16330006DD36 /* InfoViewModelPatchItem.swift */,
 			);
-			path = "Cells View Model";
+			path = Info;
 			sourceTree = "<group>";
 		};
 		404AAA871F9B17030006DD36 /* Collection Cells */ = {
@@ -186,18 +184,12 @@
 				405A3FE01F8185E000F6D2B1 /* AppDelegate.swift */,
 				40CD99251F906B0F00573957 /* Utilities */,
 				40CD99201F90676D00573957 /* Models */,
-				40CD99281F9075B100573957 /* ViewModel */,
+				40CD99281F9075B100573957 /* View Model */,
 				40CD992B1F9081E100573957 /* Views */,
-				405A3FF21F819C5600F6D2B1 /* Session.swift */,
 				405A3FF81F8969DD00F6D2B1 /* MashapeApi */,
-				405A3FE21F8185E000F6D2B1 /* ViewController.swift */,
-				405A3FE41F8185E000F6D2B1 /* Main.storyboard */,
-				405A3FFD1F8B1A3F00F6D2B1 /* CardsTableViewController.swift */,
-				405A3FFB1F8AE6E800F6D2B1 /* FetchInfoWorker.swift */,
 				405A3FE71F8185E000F6D2B1 /* Assets.xcassets */,
 				405A3FE91F8185E000F6D2B1 /* LaunchScreen.storyboard */,
 				405A3FEC1F8185E000F6D2B1 /* Info.plist */,
-				405A3FFF1F8B3C3F00F6D2B1 /* ImageCell.xib */,
 			);
 			path = "mashape-heartstone";
 			sourceTree = "<group>";
@@ -211,7 +203,17 @@
 			path = MashapeApi;
 			sourceTree = "<group>";
 		};
-		409BAEFC1F9854A900704AF9 /* InfoCells */ = {
+		406735421F9DA1E200B546ED /* Card */ = {
+			isa = PBXGroup;
+			children = (
+				4067353C1F9D947600B546ED /* CardCollectionViewCell.swift */,
+				4067353D1F9D947600B546ED /* CardCollectionViewCell.xib */,
+				406735381F9D680E00B546ED /* CardsCollectionViewController.swift */,
+			);
+			path = Card;
+			sourceTree = "<group>";
+		};
+		409BAEFC1F9854A900704AF9 /* Info Cells */ = {
 			isa = PBXGroup;
 			children = (
 				409BAEFD1F9854BF00704AF9 /* PatchTableViewCell.swift */,
@@ -231,6 +233,7 @@
 				409BAF1B1F98763000704AF9 /* LocalesTableViewCell.swift */,
 				409BAF1C1F98763000704AF9 /* LocalesTableViewCell.xib */,
 			);
+			name = "Info Cells";
 			path = InfoCells;
 			sourceTree = "<group>";
 		};
@@ -239,6 +242,7 @@
 			children = (
 				40CD99211F9067A800573957 /* Info.swift */,
 				40CD99231F9067B800573957 /* Card.swift */,
+				406735361F9D5D1900B546ED /* Quality.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -251,33 +255,27 @@
 			path = Utilities;
 			sourceTree = "<group>";
 		};
-		40CD99281F9075B100573957 /* ViewModel */ = {
+		40CD99281F9075B100573957 /* View Model */ = {
 			isa = PBXGroup;
 			children = (
-				404AAA761F9B14D20006DD36 /* Cells View Model */,
+				406735401F9DA11900B546ED /* CardViewModelItem.swift */,
+				404AAA761F9B14D20006DD36 /* Info */,
 				40CD99291F90765500573957 /* InfoViewModel.swift */,
+				4067353A1F9D68F400B546ED /* CardsViewModel.swift */,
 			);
-			path = ViewModel;
+			path = "View Model";
 			sourceTree = "<group>";
 		};
 		40CD992B1F9081E100573957 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				40F4A6F01F9D53A4006AB84B /* Info Cells */,
+				405A3FE41F8185E000F6D2B1 /* Main.storyboard */,
 				405A3FF91F8A936200F6D2B1 /* InfoTableViewController.swift */,
+				406735421F9DA1E200B546ED /* Card */,
 				404AAA871F9B17030006DD36 /* Collection Cells */,
-				409BAEFC1F9854A900704AF9 /* InfoCells */,
+				409BAEFC1F9854A900704AF9 /* Info Cells */,
 			);
 			path = Views;
-			sourceTree = "<group>";
-		};
-		40F4A6F01F9D53A4006AB84B /* Info Cells */ = {
-			isa = PBXGroup;
-			children = (
-				40F4A6F11F9D53D6006AB84B /* InfoTableViewCell.swift */,
-				40F4A6F21F9D53D6006AB84B /* InfoTableViewCell.xib */,
-			);
-			path = "Info Cells";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -352,10 +350,9 @@
 				409BAF061F9875AA00704AF9 /* PatchTableViewCell.xib in Resources */,
 				409BAF041F9874D600704AF9 /* ClassesTableViewCell.xib in Resources */,
 				409BAF121F98761300704AF9 /* FactionsTableViewCell.xib in Resources */,
-				40F4A6F41F9D53D6006AB84B /* InfoTableViewCell.xib in Resources */,
 				404AAA8B1F9B172B0006DD36 /* QualityCollectionViewCell.xib in Resources */,
-				405A40001F8B3C3F00F6D2B1 /* ImageCell.xib in Resources */,
 				405A3FE81F8185E000F6D2B1 /* Assets.xcassets in Resources */,
+				4067353F1F9D947600B546ED /* CardCollectionViewCell.xib in Resources */,
 				405A3FE61F8185E000F6D2B1 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -371,14 +368,14 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-mashape-heartstone/Pods-mashape-heartstone-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
-				"${BUILT_PRODUCTS_DIR}/Nuke/Nuke.framework",
+				"${BUILT_PRODUCTS_DIR}/AlamofireImage/AlamofireImage.framework",
 				"${BUILT_PRODUCTS_DIR}/R.swift.Library/Rswift.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nuke.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireImage.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Rswift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 			);
@@ -442,9 +439,10 @@
 			files = (
 				409BAF191F98762800704AF9 /* RacesTableViewCell.swift in Sources */,
 				405A3FF51F8969B000F6D2B1 /* MashapeApi.swift in Sources */,
+				406735371F9D5D1900B546ED /* Quality.swift in Sources */,
 				404AAA821F9B16240006DD36 /* InfoViewModelSetsItem.swift in Sources */,
-				40F4A6F31F9D53D6006AB84B /* InfoTableViewCell.swift in Sources */,
 				405A3FF71F8969C700F6D2B1 /* Result.swift in Sources */,
+				406735411F9DA11900B546ED /* CardViewModelItem.swift in Sources */,
 				40CD992A1F90765500573957 /* InfoViewModel.swift in Sources */,
 				409BAF091F9875FF00704AF9 /* SetsTableViewCell.swift in Sources */,
 				409BAF0D1F98760600704AF9 /* TypesTableViewCell.swift in Sources */,
@@ -453,23 +451,22 @@
 				404AAA781F9B14F50006DD36 /* InfoViewModelQualitiesItem.swift in Sources */,
 				404AAA861F9B16330006DD36 /* InfoViewModelPatchItem.swift in Sources */,
 				409BAF031F9874D600704AF9 /* ClassesTableViewCell.swift in Sources */,
-				405A3FFC1F8AE6E800F6D2B1 /* FetchInfoWorker.swift in Sources */,
 				404AAA8A1F9B172B0006DD36 /* QualityCollectionViewCell.swift in Sources */,
 				409BAF1D1F98763000704AF9 /* LocalesTableViewCell.swift in Sources */,
 				404AAA841F9B162B0006DD36 /* InfoViewModelClassesItem.swift in Sources */,
 				40CD99221F9067A800573957 /* Info.swift in Sources */,
 				40F4A6EF1F9B181F006AB84B /* R.generated.swift in Sources */,
 				40CD99271F906B1D00573957 /* Mapper.swift in Sources */,
-				405A3FE31F8185E000F6D2B1 /* ViewController.swift in Sources */,
+				4067353B1F9D68F400B546ED /* CardsViewModel.swift in Sources */,
 				404AAA7A1F9B15F10006DD36 /* InfoViewModelLocalesItem.swift in Sources */,
 				404AAA801F9B161B0006DD36 /* InfoViewModelTypesItem.swift in Sources */,
 				404AAA7E1F9B16130006DD36 /* InfoViewModelFactionsItem.swift in Sources */,
+				4067353E1F9D947600B546ED /* CardCollectionViewCell.swift in Sources */,
 				405A3FFA1F8A936200F6D2B1 /* InfoTableViewController.swift in Sources */,
 				409BAF151F98761C00704AF9 /* QualitiesTableViewCell.swift in Sources */,
-				405A3FFE1F8B1A3F00F6D2B1 /* CardsTableViewController.swift in Sources */,
 				40CD99241F9067B800573957 /* Card.swift in Sources */,
 				405A3FE11F8185E000F6D2B1 /* AppDelegate.swift in Sources */,
-				405A3FF31F819C5600F6D2B1 /* Session.swift in Sources */,
+				406735391F9D680E00B546ED /* CardsCollectionViewController.swift in Sources */,
 				404AAA7C1F9B16000006DD36 /* InfoViewModelRacesItem.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

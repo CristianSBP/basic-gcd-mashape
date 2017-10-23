@@ -8,28 +8,22 @@
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
-    <customFonts key="customFonts">
-        <array key="Menlo.ttc">
-            <string>Menlo-Bold</string>
-            <string>Menlo-Regular</string>
-        </array>
-    </customFonts>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="QualityCollectionViewCell" customModule="mashape_heartstone" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="100" height="99"/>
+            <rect key="frame" x="0.0" y="0.0" width="129" height="129"/>
             <autoresizingMask key="autoresizingMask"/>
             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                <rect key="frame" x="0.0" y="0.0" width="100" height="99"/>
+                <rect key="frame" x="0.0" y="0.0" width="129" height="129"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Yvl-VJ-kIN">
-                        <rect key="frame" x="25" y="12.5" width="50" height="50"/>
+                        <rect key="frame" x="39.5" y="27" width="50" height="50"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="O" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g5y-Yj-5sa">
-                                <rect key="frame" x="20" y="14.5" width="11" height="22.5"/>
-                                <fontDescription key="fontDescription" name="Menlo-Bold" family="Menlo" pointSize="19"/>
+                                <rect key="frame" x="18" y="15" width="14" height="21.5"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -43,8 +37,8 @@
                         </constraints>
                     </view>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Quality" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IPM-4o-rxG">
-                        <rect key="frame" x="2" y="67" width="96" height="20"/>
-                        <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="17"/>
+                        <rect key="frame" x="2" y="85" width="125" height="21"/>
+                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
                         <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <nil key="highlightedColor"/>
                     </label>
@@ -54,7 +48,7 @@
                 <constraint firstItem="IPM-4o-rxG" firstAttribute="centerX" secondItem="Yvl-VJ-kIN" secondAttribute="centerX" id="4Xb-VQ-F1U"/>
                 <constraint firstItem="IPM-4o-rxG" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="2" id="LeI-Pk-MZd"/>
                 <constraint firstItem="Yvl-VJ-kIN" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" constant="-12.5" id="UAE-c9-lnp"/>
-                <constraint firstItem="IPM-4o-rxG" firstAttribute="top" secondItem="Yvl-VJ-kIN" secondAttribute="bottom" constant="4" id="ekW-ud-bf6"/>
+                <constraint firstItem="IPM-4o-rxG" firstAttribute="top" secondItem="Yvl-VJ-kIN" secondAttribute="bottom" constant="8" id="ekW-ud-bf6"/>
                 <constraint firstItem="Yvl-VJ-kIN" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="fav-aA-nO3"/>
                 <constraint firstAttribute="trailing" secondItem="IPM-4o-rxG" secondAttribute="trailing" constant="2" id="maN-Ez-brM"/>
             </constraints>
@@ -65,7 +59,7 @@
                 <outlet property="qualityLabel" destination="IPM-4o-rxG" id="mz0-8Y-De8"/>
                 <outlet property="roundedView" destination="Yvl-VJ-kIN" id="eJn-k4-2tC"/>
             </connections>
-            <point key="canvasLocation" x="69" y="14"/>
+            <point key="canvasLocation" x="69" y="13.5"/>
         </collectionViewCell>
     </objects>
 </document>

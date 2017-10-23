@@ -9,13 +9,11 @@
 import UIKit
 
 class ClassesTableViewCell: UITableViewCell {
-    
-    @IBOutlet weak var classLabel: UILabel?
-    
+        
     var item: String? {
         didSet {
             guard let item = item else { return }
-            classLabel?.text = item
+            textLabel?.text = item
         }
     }
     

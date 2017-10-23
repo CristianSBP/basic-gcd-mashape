@@ -38,14 +38,19 @@ class InfoTableViewController: UIViewController {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        let viewController = segue.destination as? CardsTableViewController
-        let name = Session.shared.infoWorker.sectionsInfo[tableView.indexPathForSelectedRow?.section ?? 0]
-        let identifier = Session.shared.infoWorker.itemsFor(section: name)[tableView.indexPathForSelectedRow?.row ?? 0]
-        viewController?.identifier = identifier
+        let viewController = segue.destination as? CardsCollectionViewController
+        let indexPath = tableView.indexPathForSelectedRow
+        let section = infoViewModel.items[indexPath?.section ?? 0] as? InfoViewModelClassesItem
+        let item = section?.classes[indexPath?.row ?? 0] ?? ""
+        viewController?.cardsViewModel = CardsViewModel(className: item)
     }
 }
 
 extension InfoTableViewController: InfoViewModelDelegate {
+    
+    func itemSelected() {
+        performSegue(withIdentifier: R.segue.infoTableViewController.toCards, sender: nil)
+    }
     
     func infoFetched() {
         DispatchQueue.main.async {

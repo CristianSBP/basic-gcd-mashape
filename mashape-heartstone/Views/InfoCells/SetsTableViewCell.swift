@@ -10,12 +10,10 @@ import UIKit
 
 class SetsTableViewCell: UITableViewCell {
     
-    @IBOutlet weak var setLabel: UILabel?
-    
     var item: String? {
         didSet {
             guard let item = item else { return }
-            setLabel?.text = item
+            textLabel?.text = item
         }
     }
     

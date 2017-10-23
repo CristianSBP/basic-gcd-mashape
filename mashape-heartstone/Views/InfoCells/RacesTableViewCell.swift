@@ -10,12 +10,10 @@ import UIKit
 
 class RacesTableViewCell: UITableViewCell {
 
-    @IBOutlet weak var raceLabel: UILabel?
-    
     var item: String? {
         didSet {
             guard let item = item else { return }
-            raceLabel?.text = item
+            textLabel?.text = item
         }
     }
     

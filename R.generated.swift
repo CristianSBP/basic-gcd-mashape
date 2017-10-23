@@ -38,12 +38,12 @@ struct R: Rswift.Validatable {
   
   /// This `R.nib` struct is generated, and contains static references to 10 nibs.
   struct nib {
+    /// Nib `CardCollectionViewCell`.
+    static let cardCollectionViewCell = _R.nib._CardCollectionViewCell()
     /// Nib `ClassesTableViewCell`.
     static let classesTableViewCell = _R.nib._ClassesTableViewCell()
     /// Nib `FactionsTableViewCell`.
     static let factionsTableViewCell = _R.nib._FactionsTableViewCell()
-    /// Nib `ImageCell`.
-    static let imageCell = _R.nib._ImageCell()
     /// Nib `LocalesTableViewCell`.
     static let localesTableViewCell = _R.nib._LocalesTableViewCell()
     /// Nib `PatchTableViewCell`.
@@ -59,6 +59,11 @@ struct R: Rswift.Validatable {
     /// Nib `TypesTableViewCell`.
     static let typesTableViewCell = _R.nib._TypesTableViewCell()
     
+    /// `UINib(name: "CardCollectionViewCell", in: bundle)`
+    static func cardCollectionViewCell(_: Void = ()) -> UIKit.UINib {
+      return UIKit.UINib(resource: R.nib.cardCollectionViewCell)
+    }
+    
     /// `UINib(name: "ClassesTableViewCell", in: bundle)`
     static func classesTableViewCell(_: Void = ()) -> UIKit.UINib {
       return UIKit.UINib(resource: R.nib.classesTableViewCell)
@@ -67,11 +72,6 @@ struct R: Rswift.Validatable {
     /// `UINib(name: "FactionsTableViewCell", in: bundle)`
     static func factionsTableViewCell(_: Void = ()) -> UIKit.UINib {
       return UIKit.UINib(resource: R.nib.factionsTableViewCell)
-    }
-    
-    /// `UINib(name: "ImageCell", in: bundle)`
-    static func imageCell(_: Void = ()) -> UIKit.UINib {
-      return UIKit.UINib(resource: R.nib.imageCell)
     }
     
     /// `UINib(name: "LocalesTableViewCell", in: bundle)`
@@ -112,16 +112,28 @@ struct R: Rswift.Validatable {
     fileprivate init() {}
   }
   
-  /// This `R.reuseIdentifier` struct is generated, and contains static references to 1 reuse identifiers.
+  /// This `R.reuseIdentifier` struct is generated, and contains static references to 0 reuse identifiers.
   struct reuseIdentifier {
-    /// Reuse identifier `Cell`.
-    static let cell: Rswift.ReuseIdentifier<ImageCell> = Rswift.ReuseIdentifier(identifier: "Cell")
-    
     fileprivate init() {}
   }
   
-  /// This `R.segue` struct is generated, and contains static references to 0 view controllers.
+  /// This `R.segue` struct is generated, and contains static references to 1 view controllers.
   struct segue {
+    /// This struct is generated for `InfoTableViewController`, and contains static references to 1 segues.
+    struct infoTableViewController {
+      /// Segue identifier `toCards`.
+      static let toCards: Rswift.StoryboardSegueIdentifier<UIKit.UIStoryboardSegue, InfoTableViewController, CardsCollectionViewController> = Rswift.StoryboardSegueIdentifier(identifier: "toCards")
+      
+      /// Optionally returns a typed version of segue `toCards`.
+      /// Returns nil if either the segue identifier, the source, destination, or segue types don't match.
+      /// For use inside `prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?)`.
+      static func toCards(segue: UIKit.UIStoryboardSegue) -> Rswift.TypedStoryboardSegueInfo<UIKit.UIStoryboardSegue, InfoTableViewController, CardsCollectionViewController>? {
+        return Rswift.TypedStoryboardSegueInfo(segueIdentifier: R.segue.infoTableViewController.toCards, segue: segue)
+      }
+      
+      fileprivate init() {}
+    }
+    
     fileprivate init() {}
   }
   
@@ -165,6 +177,17 @@ struct R: Rswift.Validatable {
 
 struct _R {
   struct nib {
+    struct _CardCollectionViewCell: Rswift.NibResourceType {
+      let bundle = R.hostingBundle
+      let name = "CardCollectionViewCell"
+      
+      func firstView(owner ownerOrNil: AnyObject?, options optionsOrNil: [NSObject : AnyObject]? = nil) -> CardCollectionViewCell? {
+        return instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? CardCollectionViewCell
+      }
+      
+      fileprivate init() {}
+    }
+    
     struct _ClassesTableViewCell: Rswift.NibResourceType {
       let bundle = R.hostingBundle
       let name = "ClassesTableViewCell"
@@ -182,20 +205,6 @@ struct _R {
       
       func firstView(owner ownerOrNil: AnyObject?, options optionsOrNil: [NSObject : AnyObject]? = nil) -> FactionsTableViewCell? {
         return instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? FactionsTableViewCell
-      }
-      
-      fileprivate init() {}
-    }
-    
-    struct _ImageCell: Rswift.NibResourceType, Rswift.ReuseIdentifierType {
-      typealias ReusableType = ImageCell
-      
-      let bundle = R.hostingBundle
-      let identifier = "Cell"
-      let name = "ImageCell"
-      
-      func firstView(owner ownerOrNil: AnyObject?, options optionsOrNil: [NSObject : AnyObject]? = nil) -> ImageCell? {
-        return instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? ImageCell
       }
       
       fileprivate init() {}

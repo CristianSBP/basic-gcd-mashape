@@ -7,7 +7,7 @@ target 'mashape-heartstone' do
   
   pod 'Alamofire'
   pod 'SwiftyJSON'
-  pod 'Nuke'
+  pod 'AlamofireImage'
   pod 'R.swift'
 
   # Pods for mashape-heartstone

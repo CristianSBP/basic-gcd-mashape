@@ -10,12 +10,10 @@ import UIKit
 
 class LocalesTableViewCell: UITableViewCell {
 
-    @IBOutlet weak var localeLabel: UILabel?
-    
     var item: String? {
         didSet {
             guard let item = item else { return }
-            localeLabel?.text = item
+            textLabel?.text = item
         }
     }
     

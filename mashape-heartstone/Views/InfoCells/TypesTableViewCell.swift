@@ -10,12 +10,10 @@ import UIKit
 
 class TypesTableViewCell: UITableViewCell {
 
-    @IBOutlet weak var typeLabel: UILabel?
-    
     var item: String? {
         didSet {
             guard let item = item else { return }
-            typeLabel?.text = item
+            textLabel?.text = item
         }
     }
     

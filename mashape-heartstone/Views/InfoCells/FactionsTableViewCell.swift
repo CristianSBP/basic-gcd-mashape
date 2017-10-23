@@ -10,12 +10,10 @@ import UIKit
 
 class FactionsTableViewCell: UITableViewCell {
 
-    @IBOutlet weak var factionLabel: UILabel?
-    
     var item: String? {
         didSet {
             guard let item = item else { return }
-            factionLabel?.text = item
+            textLabel?.text = item
         }
     }
     

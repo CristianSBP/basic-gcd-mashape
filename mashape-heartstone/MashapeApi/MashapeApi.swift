@@ -11,7 +11,7 @@ import SwiftyJSON
 
 class MashapeApi {
     
-    public let baseURL = "https://omgvamp--hearthstone--v1-p-mashape-com-ormvxmez8gb9.runscope.net"
+    public static let baseURL = "https://omgvamp--hearthstone--v1-p-mashape-com-ormvxmez8gb9.runscope.net"
     
     public lazy var session: URLSession = {
         let configuration = URLSessionConfiguration.default
@@ -22,7 +22,7 @@ class MashapeApi {
     }()
     
     public func fetchInfo(_ completion: @escaping (Info?) -> Void) {
-        let _url = URL(string: "\(baseURL)/info")!
+        let _url = URL(string: "\(MashapeApi.baseURL)/info")!
         session.JSONTask(with: _url) { result in
             switch result {
             case .success(let json):

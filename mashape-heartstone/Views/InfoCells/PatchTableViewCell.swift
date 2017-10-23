@@ -10,12 +10,10 @@ import UIKit
 
 class PatchTableViewCell: UITableViewCell {
 
-    @IBOutlet weak var patchLabel: UILabel?
-
     var item: InfoViewModelItem? {
         didSet {
             guard let item = item as? InfoViewModelPatchItem else { return }
-            patchLabel?.text = item.patch
+            textLabel?.text = item.patch
         }
     }
     
